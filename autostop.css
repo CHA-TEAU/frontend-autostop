@@ -2,93 +2,215 @@
     margin: 0; 
     box-sizing: border-box;
     font-family: 'Domine', serif;
-    background-color: #fcfbf6;
+    background-color: #f1efe7;
     color: #483838;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Oswald:wght@300;600&display=swap');
 
 header{
-    display: grid;
-    grid-template-areas: "header-logo header-nav header-contacts"
-                         ". header-text .";
-    grid-template-columns: 2fr 6fr 2fr;
-    grid-template-rows: 2fr 9fr;
-    min-height: 600px;
-    grid-column-gap: 20px;
-    align-items: center;
-    font-size: 18px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 30px 10px;
 }
 
-.header-logo{
-    grid-area: header-logo;
-    justify-self: center;
-}
 .header-nav{
-    grid-area: header-nav;
+    padding: 0 30px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 5%;
-    font-weight: 600;
+    gap: 10%;
 }
 
-.header-nav a:hover{
+ .header-nav a:hover{
     color: #ff8b4c;
 }
 
-.header-nav__links{
+.header-nav a, button{
     text-decoration: none;
-}
-
-.header-contacts{
-    grid-area: header-contacts;
-    display: flex;
-    gap: 4%;
-    
-}
-
-.phone{
-    
-    font-weight: 600;
-}
-
-.request{
-    text-decoration: none;
-    font-size: 14px;
-    align-self: center;
-}
-
-.request:hover{
-    color: #ff8b4c;
-}
-
-
-.header-text{
-    grid-area: header-text;
-    z-index: 1;
-    margin-right: auto;
-}
-
-.header-title{
-    margin-top: 150px;
-    font-size: 54px;
+    font-size: 22px;
     font-weight: 700;
-    letter-spacing: 2.5px;
-    line-height: 1.3;
-    
+    color: #831818;
+}
+
+.sing-btn{
+    padding: 5px 15px;
+    border: 2px solid #483838;
+    border-radius: 5px;
+    color: #483838;
+}
+
+.sing-btn:hover{
+    background-color: #ff8b4c;
+}
+
+
+/* Header Content Section */
+
+
+.left-container{
+    float: left;
+    width: 50%;
+}
+.left-content{
+    margin-left: 20%;
+    margin-top: 200px;
+}
+
+.left-content h4{
+    color: #ff8b4c;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.left-content h1{
+    color: #483838;
+    font-size: 4.623663rem;
+    font-weight: 700;
 }
 
 .tourist{
-    position: absolute;
-    width: 900px;
-    height: 700px;
-    top: 10%;
-    left: 45%;
-    z-index: 0;
+    margin-top: 80px;
+    margin-left: -6%;
+    margin-bottom: 10em;
 }
 
 
-.popular{
-    margin-top: 200px;
+
+
+/* Service Section */
+
+
+
+
+.title-style{
+    width: 100%;
+    height: 500px;
+    
+   
+}
+
+.service-title{
+    text-align: center;
+    margin-bottom: 25px;
+
     
 }
+
+.service-title h1{
+    font-size: 28px;
+    font-weight: 700;
+    color: #483838;
+    background-image: linear-gradient(90deg, #fa9965, #fa9965);
+    background-position: bottom;
+    background-size: 14% 30%;
+    background-repeat: no-repeat;
+
+}
+
+
+.service-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 100px;
+}
+
+.card{
+    width: 24%;
+    height: auto;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #483838;
+    border-radius: 5px;
+    
+}
+
+.card h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.card p{
+
+    font-size: 18px;
+}
+
+
+
+/* Popular Section */
+
+.destination-card{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.destination-card h4{
+    margin: 8px 0 auto 12px;
+    font-size: 24px;
+}
+
+.destination-card p{
+    margin: 8px 0 5px 12px;
+    font-size: 20px;
+}
+
+
+/* Footer Section */
+
+
+footer{
+    margin-top: 20%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.footer-logo p{
+    margin-top: 20px;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column h4{
+    color: #483838;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-column a{
+    color: #483838;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-column a:hover{
+    color: #ff8b4c;
+}
+
+.footer-app h4{
+    font-size: 24px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-app a{
+    margin-right: 5px;
+    
+}
+
+a:last-child{
+    margin-right: 0;
+}
+
+
